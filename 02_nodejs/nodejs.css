@@ -1,0 +1,21 @@
+.firstBox{
+    /* The image used */
+background-image: url("../07_resources/images/nodejsBGImage.jpg");
+min-height: 50%;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.firstBox img{
+    width: 300px;
+    max-width: 20%;
+    height: auto;
+}
+
+.sidebar{
+    border-right-color: #80bd01;
+    border-right-width: 4px;
+    border-right-style: solid;
+}

@@ -1,0 +1,30 @@
+.firstBox{
+    /* The image used */
+background-image: url("../07_resources/images/bootstrapBGImage.jpg");
+
+/* Set a specific height */
+min-height: 50%;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.firstBox img{
+    width: 300px;
+    max-width: 20%;
+    height: auto;
+}
+
+
+.carousel-inner .carousel-item img{
+    max-height: 50% !important;
+}
+
+.sidebar{
+    border-right-color: #7711f7;
+    border-right-width: 4px;
+    border-right-style: solid;
+}

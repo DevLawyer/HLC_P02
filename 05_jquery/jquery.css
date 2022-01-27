@@ -1,0 +1,25 @@
+.firstBox{
+    /* The image used */
+background-image: url("../07_resources/images/jqueryBGImage.jpg");
+
+/* Set a specific height */
+min-height: 50%;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.firstBox img{
+    width: 300px;
+    max-width: 20%;
+    height: auto;
+}
+
+.sidebar{
+    border-right-color: #1169ae;
+    border-right-width: 4px;
+    border-right-style: solid;
+}

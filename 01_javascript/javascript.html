@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EduCode - JS</title>
+        <link rel="icon" href="../07_resources/images/jsIcon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link href="../07_resources/css/index.css" rel="stylesheet" >
+        <link rel="stylesheet" href="javascript.css">
+        
+    </head>
+
+    <body>
+        <!-- MAIN CONTAINER -->
+        <div class="container-fluid">
+
+                <!-- SIDEBAR CONTAINER -->
+                <aside class="sidebar">
+                    <div class="logo_content">
+                        <div class="logo">
+                            <i class='bx bxs-book'></i>
+                            <div class="logo_name">EduCode</div>
+                        </div>
+                        <i class='bx bx-menu' id="btn"></i>
+                    </div>
+                    <ul class="nav_list">
+                        <li>
+                            <i class='bx bx-search'></i>
+                            <input type='text' placeholder="Search ...">
+                            <span class="tooltip">Search ...</span>
+                        </li>
+                        <li>
+                            <a href="../00_index/index.html">
+                                <i class='bx bxs-dashboard'></i>
+                                <span class="links_name">Home</span>
+                            </a>
+                            <span class="tooltip">Home</span>
+                        </li>
+                        <li>
+                            <a href="javascript.html">
+                                <i class='bx bxl-javascript' ></i>
+                                <span class="links_name">JavaScript</span>
+                            </a>
+                            <span class="tooltip">JavaScript</span>
+                        </li>
+                        <li>
+                            <a href="../02_nodejs/nodejs.html">
+                                <i class='bx bxl-nodejs'></i>
+                                <span class="links_name">Node JS VSC</span>
+                            </a>
+                            <span class="tooltip">Node JS VSC</span>
+                        </li>
+                        <li>
+                            <a href="../03_frameworks/frameworks.html">
+                                <i class='bx bx-windows' ></i>
+                                <span class="links_name">Frameworks</span>
+                            </a>
+                            <span class="tooltip">Frameworks</span>
+                        </li>
+                        <li>
+                            <a href="../04_bootstrap/bootstrap.html">
+                                <i class='bx bxl-bootstrap' ></i>
+                                <span class="links_name">Bootstrap</span>
+                            </a>
+                            <span class="tooltip">Bootstrap</span>
+                        </li>
+                        <li>
+                            <a href="../05_jquery/jquery.html">
+                                <i class='bx bxl-jquery' ></i>
+                                <span class="links_name">jQuery</span>
+                            </a>
+                            <span class="tooltip">jQuery</span>
+                        </li>
+                        <li>
+                            <a href="../06_newsletter/newsletter.html">
+                                <i class='bx bx-mail-send'></i>
+                                <span class="links_name">Newsletter</span>
+                            </a>
+                            <span class="tooltip">Newsletter</span>
+                        </li>
+                    </ul>
+                    <div class="profile_content">
+                        <div class="profile">
+                            <div class="profile_details">
+                                <img src="../07_resources/images/profile.png" alt="Owner"/>
+                                <div class="name_job">
+                                    <div class="name">Miguel Vázquez</div>
+                                    <div class="job">I.E.S. El Majuelo</div>
+                                </div>
+                            </div>
+                            <a class="git_link" href="https://github.com/DevLawyer" target="_blank">
+                                <i class='bx bxl-github' id="git_link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="home_content">
+                    <div class="container-fluid h-100">
+                        
+                        <section class="row h-50">
+                            <article class="col firstBox text-center">
+                                
+                                <img src="../07_resources/images/jsLogo.png" alt="Javascript Logo" class="mt-4">
+
+                            </article>
+                        </section>
+
+                        <section class="row">
+                            <article class="col box1">
+                                <div class="row text-center m-4"><h2>CONOZCAMOS JAVASCRIPT</h2></div>
+                                <div class="row justify-content-center m-4">
+                                    <div class="col-lg-5 card m-2 p-4 subBGColor mainFGColor text-justify">
+                                        <div class="card-title">
+                                            <h2>QUÉ ES JAVASCRIPT</h2>
+                                        </div>
+                                        <p class="card-text">
+                                            JavaScript es un lenguaje utilizado para dotar de efectos y procesos dinámicos e “inteligentes” a documentos HTML. Un documento HTML viene siendo coloquialmente “una página web”. Así, podemos decir que el lenguaje JavaScript sirve para ejecutar acciones rápidas y efectos animados en  páginas web.
+                                        </p>
+    
+                                    </div>
+
+                                    <div class="col-lg-5 card m-2 p-4 subBGColor mainFGColor text-justify">
+                                        <div class="card-title">
+                                            <h2>¿CÓMO FUNCIONA?</h2>
+                                        </div>
+
+                                        <p class="card-text">
+                                            Todos los navegadores modernos incluyen un intérprete o motor de JavaScript, que traduce e interpreta las instrucciones escritas en este lenguaje en las páginas.
+                                            Esto permite la rapidez e inmediatez que no es posible en otros lenguajes como PHP que se ejecutan en el servidor web.
+                                            El navegador reconoce las instrucciones de JavaScript de varias formas:
+
+                                            <div class="card-text">
+                                                <ul>
+                                                    <li>Insertadas en el código HTML entre las etiquetas <code>&#60;script&#62; &#60;&#47;script&#62;</code></li>
+                                                    <li>Como atributos de elementos antecedidos por la instruccion: "javascript:"</li>
+                                                    <li>El un fichero separado .js que enlazaremos con nuestro HTML con la siguiente instrucción:
+                                                        <code>&#60;script src="ruta/mijavascript.js"&#62; &#60;&#47;script&#62;</code>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section class="row">
+                            <article class="col box2">
+                                <div class="row text-center m-4"><h2>PROBEMOS JAVASCRIPT</h2></div>
+                                <div class="row m-4">
+                                    <div class="col card m-2 p-4 sub2BGColor subFGColor text-justify">
+                                        <div class="card-title">
+                                            <h2>EJEMPLOS BÁSICOS</h2>
+                                        </div>
+                                        <p class="card-text">
+                                            La función alert() abre un pequeño cuadro de alerta en el navegador, mostrando cualquier información que se especifique.
+                                            Si la insertamos directamente dentro de un elemento script de la siguiente forma, se ejecutará inmediatamente al cargar la página.
+                                            <div class="card">
+                                                <div class="card-text codeBG p-4">
+                                                    <code>
+                                                        &#60;script&#62; <br/>
+                                                        alert("Mensaje"); <br/>
+                                                        &#60;&#47;script&#62; 
+                                                    </code>
+                                                </div>
+                                            </div>                                        
+                                        </p>
+                                        <p>
+                                            Para usarla solo a petición del lector, debemos de emplearla dentro de otra función, que llamamos en este ejemplo "inialert", la que llamaremos usando un enlace de la siguiente forma.
+                                            <div class="card">
+                                                <div class="card-text codeBG p-4 ">
+                                                    <code >
+                                                        &#60;script&#62; <br/>
+                                                        function inialert(){ <br/>
+                                                            alert('Hola') <br/>
+                                                        } <br/>
+                                                        &#60;&#47;script&#62; <br/>
+                                                        &#60;a href="javascript:inialert();"&#62; Probar &#60;&#47;a&#62;
+                                                    </code>
+                                                    <br/>
+                                                    <br/>
+                                                    <button class="btn">
+                                                        <a class="mainFGColor" href="javascript:ejemplo1()">Probar</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </p>
+                                        <p>
+                                            Otra forma aún más sencilla de hacerlo es incluir la función directamente en un enlace, de la siguiente forma:
+                                            <div class="card">
+                                                <div class="card-text codeBG p-4">
+                                                    <code>
+                                                        &#60;a href="javascript:alert('Mensaje');"&#62; Probar &#60;&#47;a&#62;
+                                                    </code>
+                                                    <br/>
+                                                    <br/>
+                                                    <button class="btn">
+                                                        <a class="mainFGColor" href="javascript:ejemplo2()">Probar</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </p>
+                                        <p>
+                                            A continuación en vez de un mensaje de texto, obtenemos el título de esta página usando el objeto "document.title".
+                                            <div class="card">
+                                                <div class="card-text codeBG p-4">
+                                                    <code>
+                                                        &#60;a href="javascript:alert(''+document.title);"&#62; Ver título &#60;&#47;a&#62;
+                                                    </code>
+                                                    <br/>
+                                                    <br/>
+                                                    <button class="btn" onclick="ejemplo3()">
+                                                        Probar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row m-4">
+                                    <div class="col card m-2 p-4 sub2BGColor subFGColor text-justify">
+                                        <div class="card-title">
+                                            <h2>USOS PRÁCTICOS</h2>
+                                        </div>
+                                        <p>
+                                            Con JavaScript es posible realizar sencillos o complejos cálculos matemáticos, todo tipo de tareas relacionadas con fechas, el tiempo y la hora y otras funciones de programación.
+                                            En las páginas web es usada principalmente para las siguientes tareas:
+                                            <ol>
+                                                <li>Facilitar al lector interactuar con el contenido de la página, mediante eventos en botones, enlaces, bloques y en cualquier otro elemento.
+                                                    También se pueden detectar acciones como desplazarse por la página, situar el mouse encima de cualquier elemento, ejecutar pulsaciones con el teclado, etc. y en base a eso ejecutar acciones determinadas.
+                                                    Esto agrega dinamismo y hace las páginas de internet más funcionales.
+                                                </li>
+                                                <li>
+                                                    Enviar o transferir datos desde el servidor en internet, sin tener que recargar la página, usando AJAX.
+                                                    Por ejemplo escribir actualizaciones en las redes sociales y recibir notificaciones en tiempo real, usar el chat, enviar y recibir mensajes, cargar contenido de otras páginas o de archivos RSS, etc.
+                                                </li>
+                                                <li>
+                                                    Manipular la estructura de las paginas (DOM).
+                                                    Sus funciones y métodos permiten modificar bloques o elementos aislados, eliminarlos, moverlos, cambiar su estilo o agregarles contenido, entre otras funcionalidades.
+                                                </li>
+                                                <li>
+                                                    Convertir las paginas en aplicaciones web, con las que es posible jugar, oír música o video, editar imágenes y otras acciones, de forma similar a como lo hacemos con programas en la computadora.
+                                                </li>
+                                            </ol>
+                                            Todas estas funcionalidades se extienden considerablemente usando Librerías de JavaScript adicionales como <a href="javascript:modalJquery()">JQuery</a>
+
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </section>
+
+                        <section class="row h-100">
+                            <article class="col box1">
+                                <div class="row text-center m-4 mb-5"><h2>AMPLIEMOS CONOCIMIENTOS</h2>
+                                    <div class="col">
+                                        <video class="w-50" controls>
+                                            <source src="../07_resources/videos/video.mp4" type="video/mp4">
+                                            <source src="movie.ogg" type="video/ogg">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <a href="https://www.youtube.com/c/CarlosAzaustre"><h3>Conoce el canal de Carlos Azaustre</h3></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    
+                </main>
+                
+                
+            </div>
+            
+        </div>
+
+        <div class="modal fade" id="modalJQUERY" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="alert-heading" id="exampleModalLabel">jQuery</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body cardjqBG">
+                        <img src="../07_resources/images/jqueryLogo.png" alt="Logo jQuery" class="m-auto w-75 m-2 d-block">
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="../05_jquery/jquery.html">
+                            <button type="button" class="btn btn-primary">Saber más</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS SECTION -->
+        <script src="../07_resources/js/jquery-3.6.0.js"></script>
+        <script src="../07_resources/js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>        
+        <script src="../07_resources/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
