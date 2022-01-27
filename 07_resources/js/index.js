@@ -1,8 +1,6 @@
 $(document).ready(function(){
     $("#mostrarmodal").modal("show");
 
-
-    
     $("#panel1").hide();
     $("#flip1").click(function(){
         $("#panel1").slideToggle("slow");
