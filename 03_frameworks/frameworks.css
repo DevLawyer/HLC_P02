@@ -23,3 +23,11 @@ background-size: cover;
     border-right-width: 4px;
     border-right-style: solid;
 }
+
+.sidebar.active{
+    background: linear-gradient(to left, #865d3d, #003247);
+}
+
+.fmBGgradient{
+    background: linear-gradient(to left, #8197a6, white);
+}

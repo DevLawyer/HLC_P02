@@ -62,10 +62,11 @@ header {
     left: 0;
     height: 100%;
     width: 78px;
-    background: #003247;
+    background: linear-gradient(to left, #003247, #003247);
     padding: 6px 14px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     z-index: 1000;
+    overflow: hidden;
 }
 
 .sidebar.active{
@@ -80,7 +81,7 @@ header {
     align-items: center;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .sidebar.active .logo_content .logo{
@@ -155,7 +156,7 @@ header {
 }   
 
 .sidebar ul li:hover .tooltip{
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     opacity: 1;
     top: 50%;
 }
@@ -180,7 +181,7 @@ header {
     z-index: 99;
     color: white;
     font-size: 22px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .sidebar ul li .bx-search:hover{
@@ -193,7 +194,7 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    transition: all 0.4 ease;
+    transition: all 0.5s ease-in-out;
     border-radius: 12px;
     white-space: nowrap;
 }
@@ -220,7 +221,7 @@ header {
 .sidebar.active .links_name{
     opacity: 1;
     pointer-events: auto;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .sidebar .profile_content {
@@ -236,11 +237,11 @@ header {
     padding: 10px 6px;
     height: 60px;
     background: none;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .sidebar.active .profile_content .profile{
-    background: #8197a6;
+    background: transparent;
 }
 
 .profile_content .profile .profile_details {
@@ -307,7 +308,7 @@ header {
     height: 100%;
     width: calc(100% - 78px);
     left: 78px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     color: #003247;
 }
 

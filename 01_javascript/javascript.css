@@ -18,3 +18,7 @@
     border-right-width: 4px;
     border-right-style: solid;
 }
+
+.sidebar.active{
+    background: linear-gradient(to left, #f7df1e, #003247);
+}

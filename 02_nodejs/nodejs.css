@@ -19,3 +19,7 @@ background-size: cover;
     border-right-width: 4px;
     border-right-style: solid;
 }
+
+.sidebar.active{
+    background: linear-gradient(to left, #80bd01, #003247);
+}
